@@ -31,18 +31,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="620" height="370"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="7" userLabel="Program icon">
-                        <rect key="frame" x="22" y="286" width="64" height="64"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="7" secondAttribute="height" multiplier="1:1" id="7pS-Kw-VGo"/>
-                            <constraint firstAttribute="width" priority="800" constant="64" id="QhW-E9-8Br"/>
-                            <constraint firstAttribute="height" priority="800" constant="64" id="aXh-vN-k5u"/>
-                        </constraints>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSApplicationIcon" id="168"/>
-                        <connections>
-                            <binding destination="-2" name="value" keyPath="applicationIcon" id="9"/>
-                        </connections>
-                    </imageView>
                     <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="10" userLabel="Version text field">
                         <rect key="frame" x="106" y="338" width="494" height="17"/>
                         <constraints>
@@ -214,7 +202,4 @@ DQ
         </window>
         <userDefaultsController representsSharedInstance="YES" id="93" userLabel="Shared Defaults"/>
     </objects>
-    <resources>
-        <image name="NSApplicationIcon" width="32" height="32"/>
-    </resources>
 </document>
