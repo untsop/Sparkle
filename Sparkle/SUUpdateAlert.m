@@ -469,6 +469,10 @@ static NSString *const SUUpdateAlertTouchBarIdentifier = @"" SPARKLE_BUNDLE_IDEN
 #pragma clang diagnostic pop
     }
 
+    if ([versionDisplayer respondsToSelector:@selector(formatBundleDisplayVersion:withBundleVersion:matchingUpdate:)]) {
+        hostDisplayVersion = [versionDisplayer formatBundleDisplayVersion:host.displayVersion withBundleVersion:host.version matchingUpdate:latestAppcastItem];
+    }
+
     // We display a different summary depending on if it's an "info-only" item, or a "critical update" item, or if we've already downloaded the update and just need to relaunch
     NSString *finalString = nil;
 
